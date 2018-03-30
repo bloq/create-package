@@ -26,7 +26,7 @@
     "prepush": "npm run check && npm run coverage",
     "test": "mocha"
   },
-  "depencencies": {},
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-env": "1.6.1",
