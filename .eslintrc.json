@@ -1,9 +1,6 @@
 {
-  "env": {
-    "node": true
-  },
   "extends": [
-    "bloq",
-    "bloq/experimental"
-  ]
+    "bloq"
+  ],
+  "root": true
 }
