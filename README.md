@@ -1,34 +1,20 @@
 # js-package-template
 
-Base JavaScript NPM package template.
+[![Build Status](https://travis-ci.org/bloq/create-package.svg?branch=master)](https://travis-ci.org/bloq/create-package)
 
-Standard `README.md` begins below:
-
-# package-name
-
-[![Build Status](https://travis-ci.org/bloq/package-name.svg?branch=master)](https://travis-ci.org/bloq/package-name)
-
-Package description as in `package.json#description`.
-
-More detailed description or notes as needed.
+Bloq's NPM initializer for packages.
 
 ## Installation
 
-```bash
-$ npm install --save package-name
+```shell
+npm install --global @bloq/create-package
 ```
 
 ## Usage
 
-```js
-const package = require('package-name')
-
-// package basic usage
+```shell
+npm init @bloq/package
 ```
-
-### API
-
-Full description of the API the packages exposes.
 
 ## License
 
