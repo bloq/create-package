@@ -14,7 +14,8 @@
   "author": "Gabriel Montes <gabriel@bloq.com>",
   "files": [
     "bin",
-    "src"
+    "src",
+    "template"
   ],
   "main": "src/index.js",
   "bin": {
