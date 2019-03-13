@@ -25,7 +25,8 @@
     "check": "dependency-check . && dependency-check . --unused --no-dev",
     "check:outdated": "npm-check -i husky",
     "lint": "eslint --cache .",
-    "prepublishOnly": "tag-matches"
+    "prepublishOnly": "tag-matches",
+    "test": "rm -rf test-package && mkdir test-package && cd test-package && npm link && bloq-create-package && npm run build && npm run check && npm run coverage && npm run lint && cd .. && rm -rf test-package"
   },
   "dependencies": {
     "recursive-copy": "^2.0.10"
