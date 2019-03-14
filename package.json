@@ -1,6 +1,6 @@
 {
   "name": "@bloq/create-package",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Bloq's NPM initializer for packages",
   "keywords": [
     "bloq",
