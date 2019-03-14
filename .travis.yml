@@ -8,6 +8,8 @@ cache:
   directories:
     - "node_modules"
 
+if: tag IS blank
+
 jobs:
   include:
     - stage: npm release
