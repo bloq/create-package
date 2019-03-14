@@ -2,18 +2,15 @@
 
 const { spawn } = require('child_process')
 
-const copy = require('recursive-copy')
+const tar = require('tar')
 const path = require('path')
 
 // Copy files from template to current folder
 function copyTemplateFiles () {
-  const src = path.resolve(__dirname, '../template')
-  const dest = path.resolve('.')
-  const options = {
-    dot: true,
-    overwrite: true
-  }
-  return copy(src, dest, options)
+  return tar.x({
+    cwd: path.resolve('.'),
+    file: path.resolve(__dirname, '../template.tar')
+  })
 }
 
 function spawnCommand (command, args, options) {

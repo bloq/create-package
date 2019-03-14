@@ -26,25 +26,26 @@
     "check": "dependency-check . && dependency-check . --unused --no-dev",
     "check:outdated": "npm-check -i husky",
     "lint": "eslint --cache .",
+    "prepare": "tar -C template -cvf template.tar .",
     "prepublishOnly": "tag-matches",
     "test": "rm -rf test-package && mkdir test-package && cd test-package && npm link && bloq-create-package && npm run build && npm run check && npm run coverage && npm run lint && cd .. && rm -rf test-package"
   },
   "dependencies": {
-    "recursive-copy": "^2.0.10"
+    "tar": "4.4.8"
   },
   "devDependencies": {
-    "check-tag-matches": "^1.0.0",
-    "dependency-check": "^3.3.0",
-    "eslint": "^5.14.1",
-    "eslint-config-bloq": "^2.0.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsdoc": "^4.1.0",
-    "eslint-plugin-mocha": "^5.3.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "husky": "^1.3.1",
-    "npm-check": "^5.9.0"
+    "check-tag-matches": "1.0.0",
+    "dependency-check": "3.3.0",
+    "eslint": "5.14.1",
+    "eslint-config-bloq": "2.0.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-jsdoc": "4.1.0",
+    "eslint-plugin-mocha": "5.3.0",
+    "eslint-plugin-node": "8.0.1",
+    "eslint-plugin-promise": "4.0.1",
+    "eslint-plugin-standard": "4.0.0",
+    "husky": "1.3.1",
+    "npm-check": "5.9.0"
   }
 }
