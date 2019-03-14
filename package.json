@@ -15,7 +15,7 @@
   "files": [
     "bin",
     "src",
-    "template"
+    "template.tar"
   ],
   "main": "src/index.js",
   "bin": {
