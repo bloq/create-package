@@ -1,4 +1,6 @@
 {
-  "pre-commit": "npm run lint",
-  "pre-push": "npm run check"
+  "hooks": {
+    "pre-commit": "npm run lint",
+    "pre-push": "npm run check"
+  }
 }
