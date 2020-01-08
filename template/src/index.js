@@ -2,7 +2,8 @@
 
 /**
  * Package API description
- * @type {String}
+ *
+ * @type {string}
  */
 const api = 'Package API'
 
